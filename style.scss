@@ -1,0 +1,27 @@
+* {
+    box-sizing:border-box;
+}
+$background-color : #33b5e5;
+@mixin style {
+    background-color: $background-color;
+    width: 100%;
+    height: 15%;
+    margin-bottom: 10px;
+}
+.gridwrapper {
+    overflow:auto;
+    position:relative;
+    height:250px;
+}
+.gridcontent {
+    width:8.33%;
+    margin:0;
+    border-right:1px solid grey;
+    height:100%;
+    float:left;
+    background-color:#84c754;
+    background-color:#f1f1f1;
+    .gridcontent1 {
+        @include style;
+    }
+}
